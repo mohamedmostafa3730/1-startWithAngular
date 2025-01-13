@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/startWithAngular/ ": {},
+    "/startWithAngular/about": {},
+    "/startWithAngular/contact": {},
+    "/startWithAngular/home": {},
+    "/startWithAngular/portfolio": {}
+  }
+}
