@@ -1,8 +1,0 @@
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    background-color: #FFC107;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
