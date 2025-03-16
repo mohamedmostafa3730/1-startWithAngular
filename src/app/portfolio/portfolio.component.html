@@ -1,0 +1,50 @@
+<div class="text-center">
+  <h1 class="text-uppercase fw-bold py-3 h2">portfolio component</h1>
+  <div class="mb-3">
+    <div class="lineStar bg-black"></div>
+    <i class="fas fa-star fa-2x px-2"></i>
+    <div class="lineStar bg-black"></div>
+  </div>
+</div>
+<div>
+  <div class="row g-3">
+    @for (image of images; track $index) {
+    <div class="col-md-4">
+      <div class="inner position-relative" (click)="onOpenImage(image)">
+        <div>
+          <img [src]="image" class="w-100 pe-auto rounded-5" alt="poert" />
+        </div>
+        <div
+          class="text-white position-absolute bg-img top-0 start-0 w-100 h-100"
+        >
+          <i
+            class="fa-solid fa-plus position-absolute position-relative start-50 top-50 translate-middle"
+          ></i>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+  <div
+    class="d-flex justify-content-center align-items-center position-fixed top-0 start-0 end-0 bottom-0 bg-dark bg-opacity-50"
+    [class.d-none]="showImage"
+  >
+    <div class="position-relative">
+      <img [src]="imageOnClick" class="w-100 rounded-5" />
+      <div>
+        <i
+          class="fa-solid fa-chevron-left text-white p-2 fs-3 position-absolute bottom-50 nextImage"
+          (click)="previousImage()"
+        ></i>
+        <i
+          class="fa-solid fa-xmark p-2 fs-3 text-white position-absolute LI top-0 closeImage"
+          (click)="closeImage()"
+        ></i>
+        <i
+          class="fa-solid fa-chevron-right text-white p-2 fs-3 position-absolute end-0 bottom-50 previousImage"
+          (click)="nextImage()"
+        ></i>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.nav-link {
+  transition: unset !important;
+  -webkit-transition: unset !important;
+  -moz-transition: unset !important;
+  -ms-transition: unset !important;
+  -o-transition: unset !important;
+}
+
+.hoverLink:hover{
+    background-color: hsla(45, 100%, 51%, 0.329);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
